@@ -1,0 +1,66 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 10px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: yellow;
+}
+
+/* FLOAT requirement */
+.content {
+  float: left;
+  width: 70%;
+  padding: 10px;
+}
+
+.sidebar {
+  float: right;
+  width: 25%;
+  background: #eee;
+  padding: 10px;
+}
+
+/* CLEAR requirement */
+.clear {
+  clear: both;
+}
+
+.card {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .content, .sidebar {
+    float: none;
+    width: 100%;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+}
